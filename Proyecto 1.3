@@ -1,0 +1,27 @@
+Datos de Entrada:
+Para la recolección de datos se hará uso de 42 entradas, cada entrada representa una posición en la matriz del juego.
+Los datos a recolectar se encontraran en un rango de 0 - 2 y el significado de cada número será:
+-	0 = posición de la matriz se encuentra vacía.
+-	1 = posición de la matriz ocupada por el usuario.
+-	2 = posición de la matriz ocupada por el agente. 
+Para los datos de entrada no será necesario ser normalizados, ya que el rango de 0 - 2  no va a cambiar. 
+
+Datos de Salida:
+Se contara con 6 salidas de las cuales se obtendrán datos en un rango de 0-1, las primeras 3 salidas proporcionaran la 
+combinación binaria de la posición de la fila y las siguientes 3 la posición de la columna, por la forma en que se obtienen 
+los datos no es necesario normalizarlos y que el valor de las salidas se mantendrá dentro de 0-1. 
+
+Ejemplo:
+Datos de entrada:                             Datos de salida: 	
+000000000000000000000000000000000000000000  |       101  011
+
+Lo que muestra la tabla es que el agente realizara el primer movimiento, ya que la matriz se encuentra vacía, y la salida va a 
+estar compuesta por dos conjuntos de datos el primero que es: 101 binario (5 decimal) para la fila y 011 binario (3 decimal) para 
+la columna.
+
+
+Al siguiente turno del agente puede que el jugador haya elegido la última posición de la matriz (42), quedando la tabla:
+
+Datos de entrada:                             Datos de salida: 	
+000000000000000000000000000000000000002001  |       101  010
+
